@@ -118,14 +118,14 @@ installing to a single repository:
 
 ```bash
 # Download the talisman installer script
-curl https://raw.githubusercontent.com/thoughtworks/talisman/master/install.sh > ~/install-talisman.sh
-chmod +x ~/install-talisman.sh
+curl https://raw.githubusercontent.com/thoughtworks/talisman/master/install.sh > setup/install-talisman.sh
+chmod +x setup/install-talisman.sh
 ```
 
 ```bash
 # Install to a single project as a pre-commit hook
 cd as101-4-workshop # if you're not already in this directory
-~/install-talisman.sh pre-commit
+./setup/install-talisman.sh pre-commit
 ```
 
 ### Installation as a Global Hook Template
